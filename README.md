@@ -1,7 +1,6 @@
 # alligators-institucional
-<h1>Projeto PorTour</h1>
-<p> Projeto em grupo do bootcamp CodeYourWay</p><br>
-<p>Integrantes:</p><br>
+<h1>PorTour Project</h1>
+<p>Members:</p><br>
 <ul>
     <li>André F. Leal</li>
     <li>Josi Luz</li>
