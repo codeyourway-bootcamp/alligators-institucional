@@ -4,7 +4,8 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-}
+  }
+
 .texto-header {
   position: absolute;
   top: 50%;
@@ -51,4 +52,23 @@ ul {
 .container-logo-menu > img {
   width: 300px;
   height: 150px;
+}
+
+main{
+font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+  color:rgb(144, 135, 113)
+}
+
+.imagens-dos-passeios{
+  width: 200px;
+  height: 200px;
+  border-radius: 15%;
+  border-color: rgb(144, 135, 113);
+  border: 5px solid rgb(144, 135, 113);
+}
+
+footer {
+  color:rgb(144, 135, 113) ;
+  
 }
