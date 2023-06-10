@@ -42,6 +42,11 @@ ul {
   gap: 50px;
   padding: 5px 150px;
   font-size: 30px;
+   }
+
+a {
+  text-decoration: none;
+  color: rgb(97, 93, 80);
 }
 .container-logo-menu {
   display: flex;
@@ -56,16 +61,22 @@ ul {
 
 main{
 font-family: 'Times New Roman', Times, serif;
-  font-size: 50px;
-  color:rgb(144, 135, 113)
-}
+  font-size: 100px;
+  color:rgb(97, 93, 80);
+  
+  }
 
 .imagens-dos-passeios{
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   border-radius: 15%;
   border-color: rgb(144, 135, 113);
   border: 5px solid rgb(144, 135, 113);
+  object-fit: cover;
+  display: inline;
+  flex-wrap: wrap;
+  padding: 5px 3px;
+  margin: 70px;
 }
 
 footer {
