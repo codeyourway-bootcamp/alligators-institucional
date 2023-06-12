@@ -43,7 +43,6 @@ ul {
   padding: 5px 150px;
   font-size: 30px;
    }
-
 a {
   text-decoration: none;
   color: rgb(97, 93, 80);
@@ -58,13 +57,26 @@ a {
   width: 300px;
   height: 150px;
 }
-
 main{
 font-family: 'Times New Roman', Times, serif;
   font-size: 100px;
   color:rgb(97, 93, 80);
-  
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.TEXTO{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  color:rgb(97, 93, 80);
+  margin-top: 100px;
+  margin-bottom: 100px;
   }
+  
+  .flex{
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+      }
 
 .imagens-dos-passeios{
   width: 300px;
@@ -73,11 +85,11 @@ font-family: 'Times New Roman', Times, serif;
   border-color: rgb(144, 135, 113);
   border: 5px solid rgb(144, 135, 113);
   object-fit: cover;
-  display: inline;
   flex-wrap: wrap;
   padding: 5px 3px;
   margin: 70px;
 }
+
 
 footer {
   color:rgb(144, 135, 113) ;
