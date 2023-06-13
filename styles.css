@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  }
+}
 
 .texto-header {
   position: absolute;
@@ -37,6 +37,10 @@ body {
 ul {
   list-style: none;
 }
+a {
+  text-decoration: inherit;
+  color: rgb(144, 135, 113);
+}
 .navegacao-interna {
   display: flex;
   gap: 50px;
@@ -54,21 +58,48 @@ ul {
   height: 150px;
 }
 
-main{
-font-family: 'Times New Roman', Times, serif;
+main {
+  font-family: "Times New Roman", Times, serif;
   font-size: 50px;
-  color:rgb(144, 135, 113)
+  color: rgb(144, 135, 113);
 }
 
-.imagens-dos-passeios{
-  width: 200px;
-  height: 200px;
+.imagens-dos-passeios {
+  width: 300px;
+  height: 300px;
   border-radius: 15%;
   border-color: rgb(144, 135, 113);
   border: 5px solid rgb(144, 135, 113);
 }
 
 footer {
-  color:rgb(144, 135, 113) ;
-  
+  color: rgb(144, 135, 113);
+  text-align: center;
+}
+
+.images-position {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 40px auto;
+  gap: 100px;
+  max-width: 1224px;
+}
+h1 {
+  text-align: center;
+  color: rgb(102, 94, 73);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 80px;
+}
+h2 {
+  text-align: center;
+  color: rgb(102, 94, 73);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+}
+p {
+  text-align: center;
+  color: rgb(144, 135, 113);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
 }
