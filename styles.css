@@ -1,13 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:400,700,900%27);
-
+@import url("https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Tilt+Prism&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap");
 body {
   margin: 0;
   padding: 0;
   height: 100%;
-  }
+}
 
 .texto-header {
   position: absolute;
+  font-family: "Tilt Prism", cursive;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -16,6 +19,10 @@ body {
   background-clip: text;
   color: transparent;
   -webkit-background-clip: text;
+  transition: transform 0.3s ease;
+}
+.texto-header:hover {
+  transform: scale(2.2);
 }
 
 .container {
@@ -39,13 +46,19 @@ ul {
 }
 .navegacao-interna {
   display: flex;
+  flex-wrap: wrap;
   gap: 50px;
   padding: 5px 150px;
   font-size: 30px;
 }
+a {
+  text-decoration: none;
+  color: rgb(97, 93, 80);
+}
 .container-logo-menu {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   text-align: center;
 }
@@ -54,21 +67,329 @@ ul {
   height: 150px;
 }
 
-main{
-font-family: 'Times New Roman', Times, serif;
-  font-size: 50px;
-  color:rgb(144, 135, 113)
-}
-
-.imagens-dos-passeios{
-  width: 200px;
-  height: 200px;
+.imagens-dos-passeios {
+  width: 400px;
+  height: 400px;
   border-radius: 15%;
   border-color: rgb(144, 135, 113);
   border: 5px solid rgb(144, 135, 113);
+  object-fit: cover;
+  flex-wrap: wrap;
+  padding: 5px 3px;
+  margin: 70px;
 }
 
 footer {
-  color:rgb(144, 135, 113) ;
-  
+  font-family: "Comfortaa", cursive;
+  color: rgb(144, 135, 113);
+  text-align: center;
+}
+
+.images-position {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 40px auto;
+  gap: 100px;
+}
+h1 {
+  text-align: center;
+  color: rgb(102, 94, 73);
+  font-family: "Comfortaa", cursive;
+  font-size: 80px;
+}
+h2 {
+  text-align: center;
+  color: rgb(102, 94, 73);
+  font-family: "Comfortaa", cursive;
+  font-size: 50px;
+}
+p {
+  text-align: center;
+  color: rgb(144, 135, 113);
+  font-family: "Comfortaa", cursive;
+  font-size: 30px;
+}
+li {
+  display: flex;
+  text-align: center;
+  color: rgb(144, 135, 113);
+  font-family: "Comfortaa", cursive;
+  font-size: 25px;
+}
+b {
+  color: rgb(88, 80, 55);
+  font-family: "Comfortaa", cursive;
+}
+.text-upimage {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -50px;
+  margin-top: 100px;
+}
+.text-home {
+  text-align: center;
+  color: rgb(144, 135, 113);
+  font-family: "Comfortaa", cursive;
+  font-size: 25px;
+}
+.text-upimage {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.images-position a:hover .text-upimage {
+  opacity: 1;
+}
+.animated-word {
+  position: relative;
+  display: inline-block;
+}
+
+.animated-word::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(144, 135, 113);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease;
+}
+
+.animated-word:hover::after {
+  transform: scaleX(1);
+}
+
+/* Estilos para dispositivos móveis */
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+    flex-wrap: wrap;
+  }
+  header {
+    padding: 0%;
+    flex-wrap: wrap;
+  }
+  .imagens-dos-passeios {
+    width: 100px;
+    height: 100px;
+    border-radius: 15%;
+    border-color: rgb(144, 135, 113);
+    border: 5px solid rgb(144, 135, 113);
+    object-fit: cover;
+    flex-wrap: wrap;
+    padding: 5px 3px;
+    margin: 50px;
+  }
+  .container img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  li {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(144, 135, 113);
+    font-family: "Comfortaa", cursive;
+    font-size: 10px;
+    padding-left: 20px;
+  }
+  .container-logo-menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 2px;
+  }
+  .container-logo-menu > img {
+    width: 150px;
+    height: 100px;
+  }
+  h1 {
+    text-align: center;
+    color: rgb(102, 94, 73);
+    font-family: "Comfortaa", cursive;
+    font-size: 15px;
+  }
+  h2 {
+    text-align: center;
+    color: rgb(102, 94, 73);
+    font-family: "Comfortaa", cursive;
+    font-size: 13px;
+  }
+  b {
+    color: rgb(88, 80, 55);
+    font-family: "Comfortaa", cursive;
+    font-size: 10px;
+  }
+  .text-home {
+    text-align: center;
+    color: rgb(144, 135, 113);
+    font-family: "Comfortaa", cursive;
+    font-size: 10px;
+  }
+  .images-position {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+  }
+  p {
+    text-align: center;
+    color: rgb(144, 135, 113);
+    font-family: "Comfortaa", cursive;
+    font-size: 14px;
+    padding: 25px;
+  }
+  .navegacao-interna {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding: 5px 5px;
+    font-size: 14px;
+  }
+  .texto-header {
+    position: absolute;
+    font-family: "Tilt Prism", cursive;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    font-size: 50px;
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+  }
+  footer {
+    font-family: "Comfortaa", cursive;
+    color: rgb(144, 135, 113);
+    text-align: center;
+    font-size: 8px;
+  }
+  .text-values {
+    display: flex;
+    flex-wrap: wrap;
+    padding-right: 35px;
+  }
+  .animated-word::after {
+    height: 1px;
+  }
+}
+
+/* Estilos para tablets */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  body {
+    font-size: 25px;
+    flex-wrap: wrap;
+  }
+  header {
+    padding: 0%;
+    flex-wrap: wrap;
+  }
+  .imagens-dos-passeios {
+    width: 180px;
+    height: 180px;
+    border-radius: 15%;
+    border-color: rgb(144, 135, 113);
+    border: 5px solid rgb(144, 135, 113);
+    object-fit: cover;
+    flex-wrap: wrap;
+    padding: 5px 3px;
+    margin: 50px;
+  }
+  .container img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  li {
+    display: flex;
+    justify-content: space-between;
+    color: rgb(144, 135, 113);
+    font-family: "Comfortaa", cursive;
+    font-size: 18px;
+    padding: 20px;
+  }
+  .container-logo-menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    margin-top: 5px;
+  }
+  .container-logo-menu > img {
+    width: 190px;
+    height: 140px;
+  }
+  h1 {
+    text-align: center;
+    color: rgb(102, 94, 73);
+    font-family: "Comfortaa", cursive;
+    font-size: 50px;
+  }
+  .text-home {
+    text-align: center;
+    color: rgb(144, 135, 113);
+    font-family: "Comfortaa", cursive;
+    font-size: 15px;
+    padding: 20px;
+  }
+  .images-position {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px auto;
+    gap: 20px;
+  }
+  p {
+    text-align: center;
+    color: rgb(144, 135, 113);
+    font-family: "Comfortaa", cursive;
+    font-size: 18px;
+    padding: 35px;
+  }
+  .navegacao-interna {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding: 5px 5px;
+    font-size: 20px;
+  }
+  .texto-header {
+    position: absolute;
+    font-family: "Tilt Prism", cursive;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    font-size: 50px;
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+  }
+  footer {
+    font-family: "Comfortaa", cursive;
+    color: rgb(144, 135, 113);
+    text-align: center;
+    font-size: 15px;
+  }
+  .text-values {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-right: 35px;
+  }
+  .animated-word::after {
+    height: 1px;
+  }
 }
