@@ -53,6 +53,7 @@ a {
 .container-logo-menu {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
   text-align: center;
 }
@@ -62,8 +63,8 @@ a {
 }
 
 .imagens-dos-passeios {
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   border-radius: 15%;
   border-color: rgb(144, 135, 113);
   border: 5px solid rgb(144, 135, 113);
@@ -110,9 +111,21 @@ li {
   text-align: center;
   color: rgb(144, 135, 113);
   font-family: "Comfortaa", cursive;
-  font-size: 30px;
+  font-size: 25px;
 }
 b {
   color: rgb(88, 80, 55);
   font-family: "Comfortaa", cursive;
+}
+.text-upimage {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -50px;
+  margin-top: 100px;
+}
+.text-home {
+  text-align: center;
+  color: rgb(144, 135, 113);
+  font-family: "Comfortaa", cursive;
+  font-size: 25px;
 }
