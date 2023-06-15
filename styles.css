@@ -164,6 +164,11 @@ b {
 .animated-word:hover::after {
   transform: scaleX(1);
 }
+.icons-position {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px 200px;
+}
 
 /* Estilos para dispositivos móveis */
 @media only screen and (max-width: 767px) {
@@ -280,6 +285,14 @@ b {
   }
   .animated-word::after {
     height: 1px;
+  }
+  .icons-box {
+    font-size: 14px;
+  }
+  .icons-position {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 10px;
   }
 }
 
