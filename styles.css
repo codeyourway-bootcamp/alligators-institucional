@@ -169,6 +169,10 @@ b {
   flex-wrap: wrap;
   padding: 50px 200px;
 }
+.text-values {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 /* Estilos para dispositivos móveis */
 @media only screen and (max-width: 767px) {
@@ -281,7 +285,7 @@ b {
   .text-values {
     display: flex;
     flex-wrap: wrap;
-    padding-right: 35px;
+    padding-right: 25px;
   }
   .animated-word::after {
     height: 1px;
